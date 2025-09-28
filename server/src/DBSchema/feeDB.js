@@ -6,8 +6,12 @@ const MasterFeeSchema = new Schema({
     type: String, // e.g. "2024-2025"
     required: true,
   },
+  Branch:{
+    type : String,
+    required:true
+  },
   class: {
-    type: String, // e.g. "10th Grade"
+    type: String,
     required: true,
   },
   term: {
