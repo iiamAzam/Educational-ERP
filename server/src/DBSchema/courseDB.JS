@@ -1,7 +1,5 @@
 import mongoose from "mongoose"
-
 const schema  = mongoose.schema
-
 const courscategory = {
     UG:["BPT","BSCNURSING"],
     PARAMEDICAL:["DMLT","DMIT","DOT","DOT & AT","DDT"]
@@ -19,7 +17,6 @@ const CourseModel = new schema({
                 ]
             }
 })
-
 CourseModel.pre("save", (next)=>{
         if (this.category==="UG"&& !courscategory.UG.includes(this.course)){
             return next(new Error("invalid course for ug category"))

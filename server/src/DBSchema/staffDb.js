@@ -2,11 +2,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const StaffSchema = new Schema({
-  employeeId: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+
   name: {
     type: String,
     required: true,
