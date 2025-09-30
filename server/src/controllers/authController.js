@@ -15,9 +15,11 @@ async function admincontroller(req,res){
             }
             }
 
+
+
     }
     catch(error){
-            console.log("somthing went wrong",error)
+            console.log("error ",error)
     }
 }
 
